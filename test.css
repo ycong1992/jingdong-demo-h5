@@ -346,17 +346,39 @@ a {
     border-bottom: 1px solid rgb(222, 222, 222);
 }
 .advert-content ul {
-    width: 1100px;
+    width: 1400px;
     height: 100px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .advert-content li {
     font-size: 18px;
     font-weight: bolder;
     color: black;
-    float: left;
-    margin:  40px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 50px;
 }
+.advert-content .unit {
+    width: 36px;
+	height: 42px;
+    background: url(./images/ico_service.png) no-repeat;
+    margin-right: 10px;
+}
+.advert-content .section-font {
+    background-position: 0 -44px;
+}
+.advert-content .thrid-font {
+    background-position: 0 -86px;
+}
+.advert-content .forth-font {
+    background-position: 0 -128px;
+}
+
 .guide-content {
     width: 1180px;
     height: 200px;
@@ -376,6 +398,14 @@ a {
 }
 .guide-content ul a:hover {
     color:rgb(241, 35, 22);
+}
+.guide-content .map {
+    width: 207px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    right: -8px;
+	background: url(./images/ico_footer.png) no-repeat;
 }
 .guide-content .map-title {
     padding: 15px 0px 20px 0;
@@ -417,5 +447,30 @@ a {
     text-align: center;
     font-size: 12px;
     color: rgb(171, 171, 171);
+}
+.footer-icon-content {
+    width: 645px;
+    margin: 10px auto;
+}
+.footer-icon {
+    width: 103px;
+	height: 32px;
+	display: inline-block;
+	background: url(./images/ico_footer.png) no-repeat 0 -151px;
+}
+.icon2 {
+    background-position: -103px -151px;
+}
+.icon3 {
+    background-position: -0 -183px;
+}
+.icon4 {
+    background-position: -103px -183px;
+}
+.icon5 {
+    background-position: -0 -215px;
+}
+.icon6 {
+    background-position: -103px -215px;
 }
 
