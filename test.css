@@ -106,11 +106,24 @@ a {
     border-width: 0;
     margin-top: 4px;
 }
+.search-content em {
+    width: 20px;
+    height: 15px;
+    background: url(./images/sprite-search.png) no-repeat center;
+    position: absolute;
+    top: 34px;
+    right: 380px;
+    background-position: 0 0;
+}
+.search-content em:hover {
+    background-position: -30px 0;
+}
 .shopping-car {
     width: 150px;
     height: 34px;
     border: 1px solid rgb(204, 204, 204);
     margin-left: 30px;
+    position: relative;
 }
 .shopping-car a {
     color: rgb(241, 35, 22);
@@ -119,15 +132,17 @@ a {
     line-height: 34px;
     margin-left: 40px;
 }
-.shopping-car h5{
-    width: 15px;
-    height: 20px;
-    color: white;
-    background-color: rgb(241, 35, 22);
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin-left: -5px;
+.shopping-car s {
+    position: absolute;
+	top: 5px;
+	text-decoration: none;
+	background-color: #f10215;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	padding: 0 3px;
+	border-radius: 7px;
+	color: #fff;
 }
 .search-list {
     width: 600px;
@@ -259,19 +274,29 @@ a {
     height: 120px;
     background-color: rgb(255, 192, 203);
 }
+.info-top .icon {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;;
+}
 .info-top h6 {
-    color: rgb(157, 157, 157);
-    position: relative;
-    top: 25px;
-    left: 40px;
+    color: rgb(116, 116, 116);
+    position: absolute;
+    font-weight: 400;
+    top: 23px;
+    left: 70px;
+    width: 110px;
 }
 .info-top a {
     background-color: transparent;
     border: none;
-    color: rgb(157, 157, 157);
+    color: rgb(116, 116, 116);
     position: relative;
-    top: 40px;
-    left: 40px;
+    top: 67px;
+    left: 70px;
     font-size: 14px;
 }
 .info-top a:hover {
@@ -306,11 +331,18 @@ a {
 .right-info table td {
     border-right: 1px solid rgb(204, 204, 204);
     border-bottom: 1px solid rgb(204, 204, 204);
+    height: 66px;
+}
+.right-info table td div {
+    width: 24px;
+    height: 24px;
+    background: url(./images/sprite_fs@1x.png) no-repeat center;
+    background-position: 0 -44px;
+    margin: 0 auto;
 }
 .right-info table a {
     color: rgb(110, 104, 101);
     font-size: 14px; 
-    line-height: 66px;
 }
 .float-tips1 {
     position: absolute;
